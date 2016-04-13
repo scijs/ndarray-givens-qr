@@ -1,0 +1,41 @@
+{
+  "name": "ndarray-givens-qr",
+  "version": "0.1.0",
+  "description": "QR decomposition using Givens rotations",
+  "main": "index.js",
+  "dependencies": {
+    "ndarray": "^1.0.18",
+    "ndarray-blas-level1": "^1.1.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "semistandard": "^7.0.5"
+  },
+  "scripts": {
+    "test": "semistandard && mocha test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tab58/ndarray-givens-qr.git"
+  },
+  "semistandard": {
+    "globals": [
+      "describe",
+      "it",
+      "beforeEach"
+    ]
+  },
+  "keywords": [
+    "qr",
+    "decomposition",
+    "matrix",
+    "factorization"
+  ],
+  "author": "Tim Bright",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tab58/ndarray-givens-qr/issues"
+  },
+  "homepage": "https://github.com/tab58/ndarray-givens-qr#readme"
+}

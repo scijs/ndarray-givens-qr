@@ -13,7 +13,7 @@ var A = ndarray(new Float64Array([...]), [m, n]);
 var b = ndarray(new Float64Array([...]), [m]);
 var x = ndarray(new Float64Array([...]), [n]);
 
-qr.solveAxb(A, b, x);
+qr.solve(A, b, x);
 ```
 
 Alternatively, if no output vector is specified, then the vector is created and returned as shown:
@@ -25,7 +25,7 @@ var ndarray = require('ndarray');
 var A = ndarray(new Float64Array([...]), [m, n]);
 var b = ndarray(new Float64Array([...]), [m]);
 
-var x = qr.solveAxb(A, b);
+var x = qr.solve(A, b);
 ```
 
 ### Matrix Factorization
@@ -126,3 +126,11 @@ This algorithm can be parallelized. Since each Givens rotation only affects the 
 | 1   3   5   7   9   11  13  * |
 +-                             -+
 ```
+
+## License
+
+© 2015 Scijs. MIT License.
+
+## Author
+
+Tim Bright

@@ -62,8 +62,8 @@ The idea behind using Givens rotations is clearing out the zeros beneath the dia
 
 ```
 +-     -+ +- -+   +- -+
-| c  -s | | a | = | r |
-| s   c | | b |   | 0 |
+| c   s | | a | = | r |
+|-s   c | | b |   | 0 |
 +-     -+ +- -+   +- -+
 ```
 
@@ -104,8 +104,8 @@ for j = 0 : 1 : n-1
     b = A(i, j)
     [c, s, r] = BLAS1.rotg(a, b)
     G = givens(i, j, c, s)
-    R = G^T * R
-    Q = Q * G
+    R = G * R
+    Q = Q * G^T
   end
 end
 ```
